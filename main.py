@@ -26,10 +26,13 @@ def generate_password(length=100):
     return password
 
 
-# Generate a 100-character password
-print(COLORS['cyan'] + generate_password() + COLORS['reset'])
-
-# Keep the script running
-while True:
-    input("Press enter to generate a new password.")
+try:
+    # Generate a 100-character password
     print(COLORS['cyan'] + generate_password() + COLORS['reset'])
+
+    # Keep the script running
+    while True:
+        input("Press enter to generate a new password.")
+        print(COLORS['cyan'] + generate_password() + COLORS['reset'])
+except KeyboardInterrupt:
+    print("\n" + COLORS['red'] + "Generator Stopped" + COLORS['reset'])
