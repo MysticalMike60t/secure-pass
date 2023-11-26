@@ -8,6 +8,11 @@ dist/
 /*.exe
 *.spec
 
+*.vscode
+/.vscode/
+.vscode/
+.vscode
+
 # User-specific files
 *.rsuser
 *.suo
